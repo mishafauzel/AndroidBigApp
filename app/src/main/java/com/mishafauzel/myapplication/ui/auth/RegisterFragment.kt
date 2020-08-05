@@ -2,12 +2,11 @@ package com.mishafauzel.myapplication.ui.auth
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.mishafauzel.myapplication.R
-import dagger.android.support.DaggerFragment
+import com.mishafauzel.myapplication.ui.BaseFragment
 
 private const val TAG = "RegisterFragment"
 class RegisterFragment : BaseFragment(){

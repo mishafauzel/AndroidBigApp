@@ -1,10 +1,10 @@
-package com.mishafauzel.myapplication.ui.auth
+package com.mishafauzel.myapplication.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProvider
+import com.mishafauzel.myapplication.ui.auth.AuthViewModel
 import com.mishafauzel.myapplication.viewmodels.ViewModelFactory
 import dagger.android.support.DaggerFragment
 import javax.inject.Inject
@@ -16,7 +16,8 @@ abstract class BaseFragment:DaggerFragment() {
     lateinit var authViewModel: AuthViewModel
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        authViewModel= ViewModelProvider(activity as FragmentActivity,viewModelFactory).get(AuthViewModel::class.java)
+        authViewModel= ViewModelProvider(activity as FragmentActivity,viewModelFactory).get(
+            AuthViewModel::class.java)
 
     }
 }

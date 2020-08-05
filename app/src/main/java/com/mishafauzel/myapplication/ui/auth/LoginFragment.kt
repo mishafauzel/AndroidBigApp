@@ -2,20 +2,17 @@ package com.mishafauzel.myapplication.ui.auth
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.observe
 import com.mishafauzel.myapplication.R
 import com.mishafauzel.myapplication.api.auth.resposec.LoginResponse
+import com.mishafauzel.myapplication.ui.BaseFragment
 import com.mishafauzel.myapplication.util.ApiEmptyResponse
 import com.mishafauzel.myapplication.util.ApiErrorResponse
 import com.mishafauzel.myapplication.util.ApiSuccessResponse
-import com.mishafauzel.myapplication.viewmodels.ViewModelFactory
-import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_login.*
-import javax.inject.Inject
 
 private const val TAG = "LoginFragment"
 class LoginFragment : BaseFragment(){
