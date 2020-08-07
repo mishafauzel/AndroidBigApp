@@ -33,6 +33,7 @@ class HelloFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "onViewCreated: ${authViewModel==null},${authViewModel}")
         navController=Navigation.findNavController(view)
+
        register.setOnClickListener{
             navigateRegister()
         }
